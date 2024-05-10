@@ -1,2 +1,7 @@
 **/.DS_Store
-data/
+crawler/data/raw/unarXive_230324_open_subset
+crawler/data/raw/unarXive_230324_open_subset.tar.xz
+crawler/data/processed/inlined_papers
+crawler/data/processed/inlined_papers.jsonl
+crawler/data/processed/cs_inlined_papers.jsonl
+.env*
