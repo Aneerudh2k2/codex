@@ -16,7 +16,13 @@ from psycopg.rows import dict_row
 import psycopg
 import datetime
 
-HF_API = HfApi()
+from dotenv import load_dotenv
+
+load_dotenv("../.env.dev")
+
+HF_TOKEN = os.getenv("HF_TOKEN")
+
+HF_API = HfApi(token=HF_TOKEN)
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 
 
@@ -80,6 +86,7 @@ def prepare():
                 repo_id="vllg/parsed_papers",
                 filename="merged.jsonl",
                 repo_type="dataset",
+                token=HF_TOKEN
             )
         ),
         PaperAnalysisRun,

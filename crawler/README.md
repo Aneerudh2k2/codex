@@ -19,3 +19,9 @@ python generate_data.py prepare
 ```python
 python generate_data.py execute
 ```
+
+
+## prepare_finetune.py
+```python
+python prepare_finetune.py
+```

@@ -5,7 +5,7 @@ from crawler.serializers import NdjsonReader
 from crawler.types import PaperAnalysisRun
 
 with NdjsonReader(
-    Path("data/raw/finetune_responses.jsonl"), PaperAnalysisRun, validate=True
+    Path("data/raw/finetune_prompt_responses.jsonl"), PaperAnalysisRun, validate=True
 ) as f:
     responses = list(f)
 
