@@ -53,7 +53,7 @@ jsonl_file = "data/processed/cs_inlined_papers.jsonl"
 parquet_file = "data/processed/cs_inlined_papers.parquet"
 
 # Specify the chunk size based on your system's memory
-chunk_size = 50000  # Adjust based on available memory
+chunk_size = 90000  # Adjust based on available memory
 
 # Create an empty Parquet writer
 parquet_writer = None
